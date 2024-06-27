@@ -18,13 +18,11 @@ INSERT INTO colaboradores (nome, dataDeNascimento, cargo, senioridade, salario) 
 ("Cicero Felipe", "1997-08-31", "Recursos Humanos", 2, 4800.00);
 
 SELECT * FROM colaboradores WHERE salario > 2000;
-
 SELECT * FROM colaboradores WHERE salario < 2000;
 
 RENAME TABLE colaboradores TO tb_colaboradores;
 
 UPDATE tb_colaboradores SET salario = salario * 1.40, senioridade = 1 WHERE senioridade = 0;
-
 SELECT nome AS 'Funcionários Juniors', salario, cargo FROM tb_colaboradores WHERE senioridade = 1;
 
 
